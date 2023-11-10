@@ -29,43 +29,50 @@ export default {
 <style scoped>
 .header {
   background: url("../assets/img/main.jpg") center/cover no-repeat;
-  color: #ffffff;
+  color: #00001a;
   padding: 20px;
   height: 20vh;
 }
 
 .head-section{
-  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+.back{
+  background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
   width: 100%;
   border: 1px solid black;
+  border-radius: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-content {
-  background-color: rgba(
-    0,
-    123,
-    255,
-    0.6
-  ); /* Add an overlay to make text more readable */
-  padding: 10px;
+nav {
+  /* border : 1px solid black; */
+  width: 50%;
+  padding: 5px;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
+  column-gap: 12vh;
   justify-content: center;
 }
 
 nav ul li {
-  margin: 0 20px;
   cursor: pointer;
   font-weight: bold;
+  padding: 5px;
+  font-size: 35px;
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid white;
 }
 </style>
