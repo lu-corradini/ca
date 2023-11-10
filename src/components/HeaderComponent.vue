@@ -2,6 +2,10 @@
   <header class="header">
     <section class="head-section">
       <div class="back">
+        <section class="header-content">
+          <h1>Welcome to Apex Institute</h1>
+          <p>Empowering Minds, Enriching Lives</p>
+        </section>
         <nav>
           <ul>
             <li>
@@ -15,6 +19,9 @@
             </li>
           </ul>
         </nav>
+        <section class="logo">
+          <img src="../assets/img/logo.png" alt="logo" />
+        </section>
       </div>
     </section>
   </header>
@@ -27,6 +34,12 @@ export default {
 </script>
 
 <style scoped>
+
+img{
+  width: 150px;
+  height: 150px;
+}
+
 .header {
   background: url("../assets/img/main.jpg") center/cover no-repeat;
   color: #00001a;
@@ -34,13 +47,13 @@ export default {
   height: 20vh;
 }
 
-.head-section{
+.head-section {
   height: 100%;
   width: 100%;
 }
 
-.back{
-  background-color: rgba(255, 255, 255, 0.5);
+.back {
+  background-color: rgba(255, 255, 255, 0.7);
   height: 100%;
   width: 100%;
   border: 2px solid #00001a;
@@ -74,5 +87,22 @@ nav ul li {
 
 nav ul li:hover {
   border-bottom: 2px solid #00001a;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  text-align: center;
+  color: #00001a;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  font-style: italic;
 }
 </style>
