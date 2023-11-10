@@ -43,7 +43,7 @@ export default {
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  border: 2px solid #00001a;
   border-radius: 2vh;
   display: flex;
   align-items: center;
@@ -73,6 +73,6 @@ nav ul li {
 }
 
 nav ul li:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #00001a;
 }
 </style>
